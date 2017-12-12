@@ -1,13 +1,13 @@
 # react-native-nodemediaclient
 Under development, do not use
 
-## install
+## 1.install
 yarn add react-native-nodemediaclient
 
-## link
+## 2.link
 react-native link
 
-## Manually modify
+## 3.Manually modify
 
 ### Android
 android/build.gradle
@@ -35,7 +35,7 @@ allprojects {
 }
 ```
 
-## copy NodeMediaClient-SDK
+## 4.copy NodeMediaClient-SDK
 ### Android
 cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs/
 
