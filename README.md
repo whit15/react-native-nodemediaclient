@@ -1,4 +1,5 @@
 # react-native-nodemediaclient
+Under development, do not use
 
 ## NodePlayerView
 
