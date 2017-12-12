@@ -20,7 +20,7 @@ import {  NodePlayerView } from 'react-native-nodemediaclient';
 ```
 
 
-## 
+## NodeCameraView
 ```
 import {  NodeCameraView } from 'react-native-nodemediaclient';
 
