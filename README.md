@@ -37,7 +37,7 @@ allprojects {
 
 ## copy NodeMediaClient-SDK
 ### Android
-cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs
+cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs/
 
 ## NodePlayerView
 
