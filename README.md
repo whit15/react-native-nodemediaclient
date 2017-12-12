@@ -1,5 +1,5 @@
 # react-native-nodemediaclient
-Under development, do not use
+
 
 ## 1.install
 yarn add react-native-nodemediaclient
