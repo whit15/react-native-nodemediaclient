@@ -1,6 +1,44 @@
 # react-native-nodemediaclient
 Under development, do not use
 
+## install
+yarn add react-native-nodemediaclient
+
+## link
+react-native link
+
+## Manually modify
+
+### Android
+android/build.gradle
+
+```
+flatDir{
+    dirs "$rootDir/../node_modules/react-native-nodemediaclient/android/libs"
+}
+```
+
+like this
+```
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        flatDir{
+            dirs "$rootDir/../node_modules/react-native-nodemediaclient/android/libs"
+        }
+    }
+}
+```
+
+## copy NodeMediaClient-SDK
+### Android
+cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs
+
 ## NodePlayerView
 
 ```
