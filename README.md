@@ -39,7 +39,9 @@ allprojects {
 ### Android
 cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs/
 
-## NodePlayerView
+## 5.Example
+
+### NodePlayerView
 
 ```
 import {  NodePlayerView } from 'react-native-nodemediaclient';
@@ -58,7 +60,7 @@ import {  NodePlayerView } from 'react-native-nodemediaclient';
 ```
 
 
-## NodeCameraView
+### NodeCameraView
 ```
 import {  NodeCameraView } from 'react-native-nodemediaclient';
 
