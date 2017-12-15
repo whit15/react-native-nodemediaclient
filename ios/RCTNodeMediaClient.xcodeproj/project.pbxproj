@@ -7,22 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0F97341FE497250070ED51 /* NodeMediaClient in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0F97331FE497250070ED51 /* NodeMediaClient */; };
 		9D895C9D1FE21119008497C7 /* RCTNodePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */; };
 		9D895C9E1FE21119008497C7 /* RCTNodePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9A1FE21119008497C7 /* RCTNodePlayerView.m */; };
 		9D895C9F1FE21119008497C7 /* RCTNodeCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9B1FE21119008497C7 /* RCTNodeCameraManager.m */; };
 		9D895CA01FE21119008497C7 /* RCTNodeCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9C1FE21119008497C7 /* RCTNodeCameraView.m */; };
-		9D954B921FE3A2C3002C8CAA /* NodeMediaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D954B911FE3A2A5002C8CAA /* NodeMediaClient.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9D954B901FE3A2A5002C8CAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D954B8C1FE3A2A5002C8CAA /* NodeMediaClient.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9D605B441E150AF90017BC38;
-			remoteInfo = NodeMediaClient;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9D895C521FE20D4E008497C7 /* CopyFiles */ = {
@@ -37,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D0F97331FE497250070ED51 /* NodeMediaClient */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = NodeMediaClient; path = RCTNodeMediaClient/NodeMediaClient.framework/NodeMediaClient; sourceTree = "<group>"; };
 		9D895C541FE20D4E008497C7 /* libRCTNodeMediaClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTNodeMediaClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodePlayerManager.m; sourceTree = "<group>"; };
 		9D895C981FE21119008497C7 /* RCTNodePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNodePlayerView.h; sourceTree = "<group>"; };
@@ -44,7 +35,6 @@
 		9D895C9A1FE21119008497C7 /* RCTNodePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodePlayerView.m; sourceTree = "<group>"; };
 		9D895C9B1FE21119008497C7 /* RCTNodeCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodeCameraManager.m; sourceTree = "<group>"; };
 		9D895C9C1FE21119008497C7 /* RCTNodeCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodeCameraView.m; sourceTree = "<group>"; };
-		9D954B8C1FE3A2A5002C8CAA /* NodeMediaClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NodeMediaClient.xcodeproj; path = "../../../../../NodeMedia/NodeMediaClient-iOS/NodeMediaClient/NodeMediaClient.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D954B921FE3A2C3002C8CAA /* NodeMediaClient.framework in Frameworks */,
+				9D0F97341FE497250070ED51 /* NodeMediaClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,17 +82,9 @@
 		9D895CE51FE2123B008497C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D954B8C1FE3A2A5002C8CAA /* NodeMediaClient.xcodeproj */,
+				9D0F97331FE497250070ED51 /* NodeMediaClient */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9D954B8D1FE3A2A5002C8CAA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9D954B911FE3A2A5002C8CAA /* NodeMediaClient.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,28 +132,12 @@
 			mainGroup = 9D895C4B1FE20D4E008497C7;
 			productRefGroup = 9D895C551FE20D4E008497C7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9D954B8D1FE3A2A5002C8CAA /* Products */;
-					ProjectRef = 9D954B8C1FE3A2A5002C8CAA /* NodeMediaClient.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				9D895C531FE20D4E008497C7 /* RCTNodeMediaClient */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9D954B911FE3A2A5002C8CAA /* NodeMediaClient.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NodeMediaClient.framework;
-			remoteRef = 9D954B901FE3A2A5002C8CAA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D895C501FE20D4E008497C7 /* Sources */ = {
