@@ -35,11 +35,48 @@ allprojects {
 }
 ```
 
+### iOS
+
+Project -> Build Settings -> Framework Search Paths
+
+Add 
+```
+$(SRCROOT)/../node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient
+```
+
 ## 4.copy NodeMediaClient-SDK
 ### Android
 cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs/
 
-## 5.Example
+### iOS
+cp NodeMediaClient.framework node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient/
+
+## 5.permission
+## Android 
+android/app/src/main/AndroidManifest.xml
+```
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    
+```
+## iOS
+Project -> Info
+
+Add
+```
+Privacy - Camera Usage Description
+Privacy - Microphone Usage Description
+```
+
+## 6.Example
 
 ### NodePlayerView
 
