@@ -46,10 +46,10 @@ $(SRCROOT)/../node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient
 
 ## 4.copy NodeMediaClient-SDK
 ### Android
-cp NodeMediaClient-2.3.4.aar node_modules/react-native-nodemediaclient/android/libs/
+copy [NodeMediaClient-2.3.4.aar](https://github.com/NodeMedia/NodeMediaClient-Android/tree/2.x/app/libs) to node_modules/react-native-nodemediaclient/android/libs/
 
 ### iOS
-cp NodeMediaClient.framework node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient/
+copy [NodeMediaClient.framework](https://github.com/NodeMedia/NodeMediaClient-iOS/tree/2.x/NodeMediaClient-Demo) to node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient/
 
 ## 5.permission
 ## Android 
