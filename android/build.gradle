@@ -20,17 +20,11 @@ android {
         }
     }
 
-    repositories {
-        flatDir{
-            dirs "libs"
-        }
-    }
-
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile(name: 'NodeMediaClient-2.3.4', ext: 'aar')
+    compile 'com.github.NodeMedia:NodeMediaClient-Android:2.4.2'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
