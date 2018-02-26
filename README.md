@@ -61,7 +61,7 @@ Open the QLive.xcworkspace and compile the project
 
 ## 5.permission
 
-## Android for publish
+### Android
 ```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
@@ -72,7 +72,7 @@ Open the QLive.xcworkspace and compile the project
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-## iOS for publish
+### iOS
 Project -> Info
 
 ```
