@@ -1,4 +1,6 @@
 # react-native-nodemediaclient
+[![npm](https://img.shields.io/npm/v/react-native-nodemediaclient.svg)](https://www.npmjs.com/package/react-native-nodemediaclient)
+[![npm](https://img.shields.io/npm/dm/react-native-nodemediaclient.svg)](https://www.npmjs.com/package/react-native-nodemediaclient)  
 该项目是NodeMediaClient-Android与NodeMediaClient-iOS SDK的react-native封装。  
 具备完整的直播播放与发布功能，提供完全一样的API调用。使您只需开发一套程序即可发布两个平台。
 
