@@ -60,18 +60,12 @@ pod install
 Open the QLive.xcworkspace and compile the project 
 
 ## 5.permission
-## Android for play 
-android/app/src/main/AndroidManifest.xml
-```
-    <uses-permission android:name="android.permission.INTERNET" />   
-```
 
 ## Android for publish
 ```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
