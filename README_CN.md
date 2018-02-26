@@ -59,25 +59,18 @@ pod install
 打开 QLive.xcworkspace 来编译和管理项目
 
 ## 5.权限
-## Android for play 
-android/app/src/main/AndroidManifest.xml
-```
-    <uses-permission android:name="android.permission.INTERNET" />   
-```
-
-## Android for publish
+## Android
 ```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-## iOS for publish
+## iOS
 Project -> Info
 
 ```
