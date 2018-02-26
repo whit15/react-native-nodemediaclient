@@ -2,7 +2,8 @@
 [![npm](https://img.shields.io/npm/v/react-native-nodemediaclient.svg)](https://www.npmjs.com/package/react-native-nodemediaclient)
 [![npm](https://img.shields.io/npm/dm/react-native-nodemediaclient.svg)](https://www.npmjs.com/package/react-native-nodemediaclient)  
 This project is the react-native packaging of NodeMediaClient-Android and NodeMediaClient-iOS SDK.
-Complete live publish and play functions, providing the exact same API call. You can publish two platforms just by developing one set of programs.
+Complete live publish and play functions, providing the exact same API call. You can publish two platforms just by developing one set of programs.  
+[中文介绍](https://github.com/NodeMedia/react-native-nodemediaclient/blob/master/README_CN.md)
 
 ## 1.install
 yarn add react-native-nodemediaclient
