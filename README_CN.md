@@ -59,7 +59,7 @@ pod install
 打开 QLive.xcworkspace 来编译和管理项目
 
 ## 5.权限
-## Android
+### Android
 ```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
@@ -70,7 +70,7 @@ pod install
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-## iOS
+### iOS
 Project -> Info
 
 ```
