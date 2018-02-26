@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D0F97341FE497250070ED51 /* NodeMediaClient in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0F97331FE497250070ED51 /* NodeMediaClient */; };
 		9D895C9D1FE21119008497C7 /* RCTNodePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */; };
 		9D895C9E1FE21119008497C7 /* RCTNodePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9A1FE21119008497C7 /* RCTNodePlayerView.m */; };
 		9D895C9F1FE21119008497C7 /* RCTNodeCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9B1FE21119008497C7 /* RCTNodeCameraManager.m */; };
@@ -27,7 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D0F97331FE497250070ED51 /* NodeMediaClient */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = NodeMediaClient; path = RCTNodeMediaClient/NodeMediaClient.framework/NodeMediaClient; sourceTree = "<group>"; };
 		9D895C541FE20D4E008497C7 /* libRCTNodeMediaClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTNodeMediaClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodePlayerManager.m; sourceTree = "<group>"; };
 		9D895C981FE21119008497C7 /* RCTNodePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNodePlayerView.h; sourceTree = "<group>"; };
@@ -42,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0F97341FE497250070ED51 /* NodeMediaClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +51,6 @@
 			children = (
 				9D895C561FE20D4E008497C7 /* RCTNodeMediaClient */,
 				9D895C551FE20D4E008497C7 /* Products */,
-				9D895CE51FE2123B008497C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,14 +73,6 @@
 				9D895C9A1FE21119008497C7 /* RCTNodePlayerView.m */,
 			);
 			path = RCTNodeMediaClient;
-			sourceTree = "<group>";
-		};
-		9D895CE51FE2123B008497C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9D0F97331FE497250070ED51 /* NodeMediaClient */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,12 +253,9 @@
 				DEVELOPMENT_TEAM = KH9H8WF8C5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RCTNodeMediaClient",
+					"$(PROJECT_DIR)/../../../ios/Pods/NodeMediaClient/NodeMediaClient/",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RCTNodeMediaClient/NodeMediaClient.framework",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -285,12 +270,9 @@
 				DEVELOPMENT_TEAM = KH9H8WF8C5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/RCTNodeMediaClient",
+					"$(PROJECT_DIR)/../../../ios/Pods/NodeMediaClient/NodeMediaClient/",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RCTNodeMediaClient/NodeMediaClient.framework",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
