@@ -11,14 +11,6 @@ react-native link
 
 ### Android
 android/build.gradle
-
-```
-flatDir{
-    dirs "$rootDir/../node_modules/react-native-nodemediaclient/android/libs"
-}
-```
-
-like this
 ```
 allprojects {
     repositories {
@@ -28,49 +20,63 @@ allprojects {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
-        flatDir{
-            dirs "$rootDir/../node_modules/react-native-nodemediaclient/android/libs"
+        
+        // Add this section
+        maven { 
+            url 'https://jitpack.io' 
         }
     }
 }
 ```
 
 ### iOS
-
-Project -> Build Settings -> Framework Search Paths
-
-Add 
+ios/Podfile
 ```
-$(SRCROOT)/../node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+# ‘QLive’ is an example project name, please change it to yours.
+target 'QLive' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for QLive
+  pod 'NodeMediaClient'
+end
 ```
 
-## 4.copy NodeMediaClient-SDK
+## 4.install NodeMediaClient-SDK
 ### Android
-copy [NodeMediaClient-2.3.4.aar](https://github.com/NodeMedia/NodeMediaClient-Android/tree/2.x/app/libs) to node_modules/react-native-nodemediaclient/android/libs/
+Open and compile the project, Android studio will automatically download and link the library without additional operations.
 
 ### iOS
-copy [NodeMediaClient.framework](https://github.com/NodeMedia/NodeMediaClient-iOS/tree/2.x/NodeMediaClient-Demo) to node_modules/react-native-nodemediaclient/ios/RCTNodeMediaClient/
+```
+cd ios
+pod install
+```
+Open the QLive.xcworkspace and compile the project 
 
 ## 5.permission
-## Android 
+## Android for play 
 android/app/src/main/AndroidManifest.xml
 ```
+    <uses-permission android:name="android.permission.INTERNET" />   
+```
+
+## Android for publish
+```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-    
 ```
-## iOS
+
+## iOS for Live streaming publish
 Project -> Info
 
-Add
 ```
 Privacy - Camera Usage Description
 Privacy - Microphone Usage Description
