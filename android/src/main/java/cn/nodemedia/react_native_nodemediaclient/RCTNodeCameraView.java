@@ -1,3 +1,10 @@
+//
+//  RCTNodeCameraView.java
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 package cn.nodemedia.react_native_nodemediaclient;
 
 import android.content.Context;
@@ -13,11 +20,6 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 import cn.nodemedia.NodeCameraView;
 import cn.nodemedia.NodePublisher;
 import cn.nodemedia.NodePublisherDelegate;
-
-
-/**
- * Created by aliang on 2017/11/28.
- */
 
 public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventListener {
     private NodePublisher mNodePublisher;
@@ -106,7 +108,7 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
         mNodePublisher.stop();
     }
 
-    public int switchCamera() {
+    public int switchCam() {
         return mNodePublisher.switchCamera();
     }
 

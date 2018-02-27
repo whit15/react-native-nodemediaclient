@@ -1,9 +1,9 @@
 //
 //  RCTNodeCameraView.h
-//  QLive
+//  
 //
 //  Created by Mingliang Chen on 2017/12/12.
-//  Copyright © 2017年 Facebook. All rights reserved.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

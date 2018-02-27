@@ -1,3 +1,10 @@
+//
+//  NodeMediaReactPackage.java
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 package cn.nodemedia.react_native_nodemediaclient;
 
 import com.facebook.react.ReactPackage;
@@ -9,10 +16,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
-/**
- * Created by aliang on 2017/11/22.
- */
 
 public class NodeMediaReactPackage implements ReactPackage{
     @Override

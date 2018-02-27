@@ -1,3 +1,10 @@
+//
+//  RCTNodePlayerView.java
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 package cn.nodemedia.react_native_nodemediaclient;
 
 import android.util.AttributeSet;
@@ -12,10 +19,6 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 import cn.nodemedia.NodePlayer;
 import cn.nodemedia.NodePlayerDelegate;
 import cn.nodemedia.NodePlayerView;
-
-/**
- * Created by aliang on 2017/11/27.
- */
 
 public class RCTNodePlayerView extends NodePlayerView implements LifecycleEventListener {
     private NodePlayer mNodePlayer;

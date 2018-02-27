@@ -1,3 +1,10 @@
+//
+//  NodePlayerViewManager.java
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 package cn.nodemedia.react_native_nodemediaclient;
 
 import com.facebook.react.bridge.ReadableArray;
@@ -11,10 +18,6 @@ import java.util.Map;
 import javax.annotation.Nullable;
 
 import cn.nodemedia.react_native_nodemediaclient.RCTNodePlayerView;
-
-/**
- * Created by aliang on 2017/11/22.
- */
 
 public class NodePlayerViewManager extends SimpleViewManager<RCTNodePlayerView> {
 

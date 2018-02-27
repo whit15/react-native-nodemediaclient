@@ -1,9 +1,9 @@
 //
-//  RTCNodePlayerView.h
-//  QLive
+//  RCTNodePlayerView.h
+//
 //
 //  Created by Mingliang Chen on 2017/11/29.
-//  Copyright © 2017年 Facebook. All rights reserved.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

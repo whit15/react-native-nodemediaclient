@@ -1,3 +1,10 @@
+//
+//  NodePlayerModule.js
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { requireNativeComponent, View, UIManager, findNodeHandle } from 'react-native';

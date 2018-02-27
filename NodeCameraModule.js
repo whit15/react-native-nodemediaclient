@@ -1,3 +1,10 @@
+//
+//  NodeCameraModule.js
+//
+//  Created by Mingliang Chen on 2017/11/29.
+//  Copyright © 2017年 NodeMedia. All rights reserved.
+//
+
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { requireNativeComponent, View, UIManager, findNodeHandle } from 'react-native';
@@ -20,8 +27,16 @@ class NodeCameraView extends Component {
   switchCamera() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.refs[RCT_VIDEO_REF]),
-      UIManager.RCTNodeCamera.Commands.switch,
+      UIManager.RCTNodeCamera.Commands.switchCamera,
       null
+    );
+  }
+
+  flashEnable(enable) {
+    UIManager.dispatchViewManagerCommand(
+      findNodeHandle(this.refs[RCT_VIDEO_REF]),
+      UIManager.RCTNodeCamera.Commands.flashEnable,
+      [enable]
     );
   }
 
