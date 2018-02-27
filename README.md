@@ -133,4 +133,5 @@ import {  NodeCameraView } from 'react-native-nodemediaclient';
 ```
 
 ## Demo project
+![img](https://raw.githubusercontent.com/NodeMedia/iShow-RN/master/1519740855033.gif)
 https://github.com/NodeMedia/iShow-RN
