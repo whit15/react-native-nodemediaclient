@@ -131,3 +131,6 @@ import {  NodeCameraView } from 'react-native-nodemediaclient';
   color="#841584"
 />
 ```
+
+## Demo project
+https://github.com/NodeMedia/iShow-RN
