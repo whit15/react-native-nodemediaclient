@@ -6,5 +6,5 @@
 //
 import NodeCameraView from './NodeCameraModule';
 import NodePlayerView from './NodePlayerModule';
-
-module.exports = { NodeCameraView, NodePlayerView };
+import { NativeModules } from 'react-native';
+module.exports = { NodeCameraView, NodePlayerView, NodeMediaClient: NativeModules.NodeMediaClient };

@@ -6,6 +6,7 @@
 //  Copyright © 2017年 NodeMedia. All rights reserved.
 //
 
+#import "RCTNodeMediaClient.h"
 #import "RCTNodeCameraView.h"
 #import <NodeMediaClient/NodeMediaClient.h>
 
@@ -20,7 +21,7 @@
 - (id)init {
   self = [super init];
   if(self) {
-    _np = [[NodePublisher alloc] init];
+    _np = [[NodePublisher alloc] initWithPremium:[RCTNodeMediaClient premium]];
     _autopreview = NO;
     _outputUrl = nil;
     _camera = nil;

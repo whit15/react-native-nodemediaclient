@@ -46,7 +46,7 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
         super(context);
         context.addLifecycleEventListener(this);
 
-        mNodePublisher = new NodePublisher(context);
+        mNodePublisher = new NodePublisher(context, RCTNodeMediaClient.getPremium());
         mNodePublisher.setNodePublisherDelegate(new NodePublisherDelegate() {
             @Override
             public void onEventCallback(NodePublisher nodePublisher, int i, String s) {

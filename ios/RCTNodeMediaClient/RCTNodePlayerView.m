@@ -6,8 +6,10 @@
 //  Copyright © 2017年 NodeMedia. All rights reserved.
 //
 
+#import "RCTNodeMediaClient.h"
 #import "RCTNodePlayerView.h"
 #import <NodeMediaClient/NodeMediaClient.h>
+
 
 @interface RCTNodePlayerView()
 
@@ -20,7 +22,7 @@
 - (id)init {
   self = [super init];
   if(self) {
-    _np = [[NodePlayer alloc] init];
+    _np = [[NodePlayer alloc] initWithPremium:[RCTNodeMediaClient premium]];
     [_np setPlayerView:self];
     _autoplay = NO;
     _inputUrl = nil;

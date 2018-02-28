@@ -27,7 +27,7 @@ public class RCTNodePlayerView extends NodePlayerView implements LifecycleEventL
     public RCTNodePlayerView(ThemedReactContext context) {
         super(context);
         context.addLifecycleEventListener(this);
-        mNodePlayer = new NodePlayer(context);
+        mNodePlayer = new NodePlayer(context, RCTNodeMediaClient.getPremium());
         mNodePlayer.setPlayerView(this);
         mNodePlayer.setNodePlayerDelegate(new NodePlayerDelegate() {
             @Override

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D19CB922046A037003563FF /* RCTNodeMediaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D19CB902046A037003563FF /* RCTNodeMediaClient.m */; };
 		9D895C9D1FE21119008497C7 /* RCTNodePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */; };
 		9D895C9E1FE21119008497C7 /* RCTNodePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9A1FE21119008497C7 /* RCTNodePlayerView.m */; };
 		9D895C9F1FE21119008497C7 /* RCTNodeCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895C9B1FE21119008497C7 /* RCTNodeCameraManager.m */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D19CB902046A037003563FF /* RCTNodeMediaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodeMediaClient.m; sourceTree = "<group>"; };
+		9D19CB912046A037003563FF /* RCTNodeMediaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNodeMediaClient.h; sourceTree = "<group>"; };
 		9D895C541FE20D4E008497C7 /* libRCTNodeMediaClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTNodeMediaClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D895C971FE21119008497C7 /* RCTNodePlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNodePlayerManager.m; sourceTree = "<group>"; };
 		9D895C981FE21119008497C7 /* RCTNodePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNodePlayerView.h; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		9D895C561FE20D4E008497C7 /* RCTNodeMediaClient */ = {
 			isa = PBXGroup;
 			children = (
+				9D19CB912046A037003563FF /* RCTNodeMediaClient.h */,
+				9D19CB902046A037003563FF /* RCTNodeMediaClient.m */,
 				9D895C9B1FE21119008497C7 /* RCTNodeCameraManager.m */,
 				9D895C991FE21119008497C7 /* RCTNodeCameraView.h */,
 				9D895C9C1FE21119008497C7 /* RCTNodeCameraView.m */,
@@ -135,6 +140,7 @@
 				9D895C9F1FE21119008497C7 /* RCTNodeCameraManager.m in Sources */,
 				9D895CA01FE21119008497C7 /* RCTNodeCameraView.m in Sources */,
 				9D895C9D1FE21119008497C7 /* RCTNodePlayerManager.m in Sources */,
+				9D19CB922046A037003563FF /* RCTNodeMediaClient.m in Sources */,
 				9D895C9E1FE21119008497C7 /* RCTNodePlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
