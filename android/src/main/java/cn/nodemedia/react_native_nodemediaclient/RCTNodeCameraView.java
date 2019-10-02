@@ -18,15 +18,13 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
-import java.util.Map;
-
 import cn.nodemedia.NodeCameraView;
 import cn.nodemedia.NodePublisher;
 import cn.nodemedia.NodePublisherDelegate;
 
 public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventListener {
     private NodePublisher mNodePublisher;
-    private Boolean isAutoPreview = false;
+    private Boolean isAutoPreview = true;
 
     private int cameraId = -1;
     private boolean cameraFrontMirror = true;
