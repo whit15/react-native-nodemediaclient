@@ -7,8 +7,9 @@
 
 package cn.nodemedia.react_native_nodemediaclient;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
+import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.LifecycleEventListener;
@@ -16,6 +17,8 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
+
+import java.util.Map;
 
 import cn.nodemedia.NodeCameraView;
 import cn.nodemedia.NodePublisher;
@@ -52,7 +55,7 @@ public class RCTNodeCameraView extends NodeCameraView implements LifecycleEventL
             public void onEventCallback(NodePublisher nodePublisher, int i, String s) {
                 WritableMap event = Arguments.createMap();
                 event.putInt("code", i);
-                event.putString("message", "s");
+                event.putString("msg", s);
                 ReactContext reactContext = (ReactContext) getContext();
                 reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
                         getId(),
