@@ -7,6 +7,8 @@
 
 package cn.nodemedia.react_native_nodemediaclient;
 
+import android.util.Log;
+
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.common.MapBuilder;
@@ -49,6 +51,11 @@ public class NodeCameraViewManager extends ViewGroupManager<RCTNodeCameraView> {
     }
 
     @Override
+    public boolean needsCustomLayoutForChildren() {
+        return true;
+    }
+
+    @Override
     protected RCTNodeCameraView createViewInstance(ThemedReactContext reactContext) {
         RCTNodeCameraView view = new RCTNodeCameraView(reactContext);
         return view;
@@ -61,8 +68,10 @@ public class NodeCameraViewManager extends ViewGroupManager<RCTNodeCameraView> {
 
     @ReactProp(name="autopreview")
     public void setAutoPreview(RCTNodeCameraView view, @Nullable Boolean autoPreview) {
-        if(autoPreview) {
+        if(autoPreview == true) {
             view.audioPreview();
+        } else {
+            view.stopPrev();
         }
     }
 
