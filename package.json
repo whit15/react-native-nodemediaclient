@@ -7,8 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mingliang Chen",
-  "license": "",
-  "dependencies": {
-    "react-navigation": "^4.0.4"
-  }
+  "license": ""
 }
