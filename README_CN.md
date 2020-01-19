@@ -17,7 +17,7 @@ react-native link react-native-nodemediaclient
 cd ios  
 pod install
 
-## 4.权限
+## 4.NodeCameraView 权限
 ### Android
 ```  
     <uses-feature android:name="android.hardware.camera"/>
