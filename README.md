@@ -18,7 +18,7 @@ react-native link react-native-nodemediaclient
 cd ios  
 pod install
 
-## 4.permission
+## 4.NodeCameraView Permission
 
 ### Android
 ```  
