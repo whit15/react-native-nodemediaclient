@@ -15,7 +15,7 @@ yarn add react-native-nodemediaclient
 react-native link react-native-nodemediaclient
 
 ## 3.Install dependencies
-cd ios 
+cd ios  
 pod install
 
 ## 4.permission
