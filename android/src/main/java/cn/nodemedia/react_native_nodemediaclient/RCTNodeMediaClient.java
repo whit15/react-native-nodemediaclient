@@ -11,7 +11,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
 public class RCTNodeMediaClient extends ReactContextBaseJavaModule {
-    private static String mPremium = "";
+    private static String mLicense = "";
 
     public RCTNodeMediaClient(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -23,11 +23,11 @@ public class RCTNodeMediaClient extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setPremium(String premium) {
-        mPremium = premium;
+    public void setLicense(String license) {
+        mLicense = license;
     }
 
-    public static String getPremium() {
-        return mPremium;
+    public static String getLicense() {
+        return mLicense;
     }
 }
