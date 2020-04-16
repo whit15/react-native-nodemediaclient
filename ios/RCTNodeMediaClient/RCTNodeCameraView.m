@@ -21,7 +21,7 @@
 - (id)init {
   self = [super init];
   if(self) {
-    _np = [[NodePublisher alloc] initWithPremium:[RCTNodeMediaClient premium]];
+    _np = [[NodePublisher alloc] initWithLicense:[RCTNodeMediaClient license]];
     [_np setNodePublisherDelegate:self];
     _autopreview = NO;
     _outputUrl = nil;

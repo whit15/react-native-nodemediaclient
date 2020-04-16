@@ -10,6 +10,6 @@
 #import <React/RCTBridgeModule.h>
 @interface RCTNodeMediaClient : NSObject<RCTBridgeModule>
 
-@property (class, nonatomic, copy) NSString *premium;
+@property (class, nonatomic, copy) NSString *license;
 
 @end

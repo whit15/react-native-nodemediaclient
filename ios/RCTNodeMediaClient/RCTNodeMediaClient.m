@@ -13,18 +13,18 @@
 RCT_EXPORT_MODULE(NodeMediaClient);
 
 
-static NSString *_premium = @"";
+static NSString *_license = @"";
 
-+ (NSString*)premium {
-    return _premium;
++ (NSString*)license {
+    return _license;
 }
 
-+ (void)setPremium:(NSString *)premium {
-    _premium = premium;
++ (void)setLicense:(NSString *)license {
+    _license = license;
 }
 
-RCT_EXPORT_METHOD(setPremium:(NSString *)premium)
+RCT_EXPORT_METHOD(setLicense:(NSString *)license)
 {
-    _premium = premium;
+    _license = license;
 }
 @end
