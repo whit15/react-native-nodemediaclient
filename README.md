@@ -35,13 +35,7 @@ Open AwesomeProject/android/app/src/main/AndroidManifest.xml, Add
 ```
 
 ### iOS
-Xcode Open AwesomeProject.xcworkspace -> Selected AwesomeProject -> Info, Add
-
-```
-Privacy - Camera Usage Description : AwesomeProject requires access to your phone’s camera.
-Privacy - Microphone Usage Description : AwesomeProject requires access to your phone’s Microphone.
-```
-or any editor open AwesomeProject/ios/QLive/Info.plist , Add:
+Oen AwesomeProject/ios/QLive/Info.plist , Add:
 ```
 <key>NSCameraUsageDescription</key>
 <string>AwesomeProject requires access to your phone’s camera.</string>
