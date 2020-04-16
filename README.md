@@ -12,7 +12,8 @@ cd AwesomeProject
 yarn add react-native-nodemediaclient
 
 ## 2.link
-react-native link react-native-nodemediaclient
+~~react-native link react-native-nodemediaclient~~
+>No longer needed after react native 0.60
 
 ## 3.Install dependencies
 cd ios  
@@ -32,12 +33,21 @@ pod install
 ```
 
 ### iOS
-Project -> Info
+Xcode Open AwesomeProject.xcworkspace -> Selected AwesomeProject -> Info
+
+Add
 
 ```
-Privacy - Camera Usage Description
-Privacy - Microphone Usage Description
+Privacy - Camera Usage Description : AwesomeProject requires access to your phone’s camera.
+Privacy - Microphone Usage Description : AwesomeProject requires access to your phone’s Microphone.
 ```
+or any editor open AwesomeProject/ios/QLive/Info.plist , Add:
+```
+<key>NSCameraUsageDescription</key>
+<string>AwesomeProject requires access to your phone’s camera.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>AwesomeProject requires access to your phone’s Microphone.</string>
+````
 
 ## 5.Example
 
