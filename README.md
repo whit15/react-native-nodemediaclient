@@ -22,6 +22,8 @@ pod install
 ## 4.NodeCameraView Permission
 
 ### Android
+Open AwesomeProject/android/app/src/main/AndroidManifest.xml, Add
+
 ```  
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
@@ -33,9 +35,7 @@ pod install
 ```
 
 ### iOS
-Xcode Open AwesomeProject.xcworkspace -> Selected AwesomeProject -> Info
-
-Add
+Xcode Open AwesomeProject.xcworkspace -> Selected AwesomeProject -> Info, Add
 
 ```
 Privacy - Camera Usage Description : AwesomeProject requires access to your phone’s camera.
@@ -74,6 +74,30 @@ import {  NodePlayerView } from 'react-native-nodemediaclient';
 ```
 import {  NodeCameraView } from 'react-native-nodemediaclient';
 
+
+const requestCameraPermission = async () => {
+  try {
+    const granted = await PermissionsAndroid.requestMultiple([PermissionsAndroid.PERMISSIONS.CAMERA,PermissionsAndroid.PERMISSIONS.RECORD_AUDIO],
+      {
+        title: "Cool Photo App Camera And Microphone Permission",
+        message:
+          "Cool Photo App needs access to your camera " +
+          "so you can take awesome pictures.",
+        buttonNeutral: "Ask Me Later",
+        buttonNegative: "Cancel",
+        buttonPositive: "OK"
+      }
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log("You can use the camera");
+    } else {
+      console.log("Camera permission denied");
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+};
+
 ......
 
 <NodeCameraView 
@@ -86,6 +110,7 @@ import {  NodeCameraView } from 'react-native-nodemediaclient';
   autopreview={true}
 />
 
+ <Button title="request permissions" onPress={requestCameraPermission} />
 <Button
   onPress={() => {
     if (this.state.isPublish) {
@@ -100,6 +125,9 @@ import {  NodeCameraView } from 'react-native-nodemediaclient';
   color="#841584"
 />
 ```
+>I don't know which version of react native updated compileSdkVersion to 28 instead of 23, Camera and microphone permissions need to be manually requested. Look at the document at https://reactnative.dev/docs/permissionsandroid , If don't have permission to apply first, you will only see a white screen.
+>In this demo you might have to boot it twice.
+In the official version, you can apply permission on the home page first, and then jump to the live page after you have permission.
 
 ## Demo project
 ![img](https://raw.githubusercontent.com/NodeMedia/iShow-RN/master/1519740855033.gif)
