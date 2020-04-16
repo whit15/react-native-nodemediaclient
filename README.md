@@ -126,6 +126,7 @@ const requestCameraPermission = async () => {
 />
 ```
 >I don't know which version of react native updated compileSdkVersion to 28 instead of 23, Camera and microphone permissions need to be manually requested. Look at the document at https://reactnative.dev/docs/permissionsandroid , If don't have permission to apply first, you will only see a white screen.
+
 >In this demo you might have to boot it twice.
 In the official version, you can apply permission on the home page first, and then jump to the live page after you have permission.
 
